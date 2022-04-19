@@ -1,0 +1,44 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" class="bg-cyan-900">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <title>Diary</title>
+</head>
+
+<body class="bg-cyan-900">
+    {% include 'base.html' %}
+
+
+    <div class="content flex flex-row">
+
+        <div class="basis-1/4">
+            {% include 'side_bar.html' %}
+            
+            
+    </div>
+            </div>
+
+        </div>
+
+        <div class="basis-1/2 mr-8">
+            {% include 'notes_component.html' %}
+        </div>
+
+        <div class="basis-1/4">
+            {% include 'people_component.html' %}
+            
+          
+
+        </div>
+
+
+
+    </div>
+</body>
+
+    {% include 'footer.html' %}
+</html>
